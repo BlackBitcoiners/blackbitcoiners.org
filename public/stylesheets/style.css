@@ -6,6 +6,10 @@ h1{
     margin-top: 0;
     font-size: 40pt;
 }
+.navbar-default{
+    background-color:#ffffff;
+    border: 2px #000000 solid;
+}
 #vmiddle{
     margin-top: 20%;
 }
