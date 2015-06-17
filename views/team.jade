@@ -3,18 +3,36 @@ extends layout
 block content
     include ./navbar
     h1 The Team
+    hr
     .row
-        .col-md-12  
-            h2 Chairman
-            .whitebox.col-md-3
-                | Kinnard Hockenhull
+        .col-md-12 
+            .thumbnail.col-md-2
+                img(src='./images/kinnard.jpg')
+                .caption
+                    h3 Chairman
+                    p Kinnard Hockenhull
 
-            h2 Director of Programming
-            .youbox.whitebox.col-md-3
-                span YOU
-            h2 Director of Communications
-            .youbox.whitebox.col-md-3
-                span YOU
+            .thumbnail.col-md-2.col-md-offset-1
+                img(src='./images/kinnard.jpg')
+                .caption
+                    h3 Director of Programming
+                    p You?
+            .thumbnail.col-md-2.col-md-offset-2
+                img(src='./images/kinnard.jpg')
+                .caption
+                    h3 Director of Communications
+                    p You?
+
     .row
-        h2 Director of Technology
-        .whitebox.col-md-3
+        .col-md-12
+            .thumbnail.col-md-2
+                img(src='./images/kinnard.jpg')
+                .caption
+                    h3 Director of Technology
+                    p You?
+            .thumbnail.col-md-2.col-md-offset-1
+                    img(src='./images/kinnard.jpg')
+                    .caption
+                        h3 Director of Development
+                        p You?
+    hr

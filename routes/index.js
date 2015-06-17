@@ -18,6 +18,12 @@ router.get('/mission', function(req, res) {
 router.get('/mailinglist', function(req, res) {
   res.render('mailingList', { title: 'Black Bitcoiners — Mail' });
 });
+router.get('/conference', function(req, res) {
+  res.render('conference', { title: 'Black Bitcoiners — Conference' });
+});
+router.get('/support', function(req, res) {
+  res.render('support', { title: 'Black Bitcoiners — Support Us' });
+});
 
 function setEnvVars (req, cb){
     shell.env['email']  = req.body.email;
