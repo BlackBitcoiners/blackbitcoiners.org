@@ -1,0 +1,37 @@
+//mailinglist
+extends layout
+block content
+    include ./navbar
+    .container-fluid
+        .mChimp.col-md-8(id="mc_embed_signup").col-md-offset-2.col-sm-10.col-sm-offset-1.col-xs-offset-1.col-xs-10
+                    form(action="//blackbitcoiners.us11.list-manage.com/subscribe/post?u=2551012804ea6c46ee20268e9&amp;id=6bd4028b3a" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate)
+                        div#mc_embed_signup_scroll
+                            h2 You must be really cool: you're signing up for the Black Bitcoiners mailing list
+                            div.indicates-required
+                                span.asterisk *
+                                | indicates required
+                            hr
+
+                            div(class="mc-field-group").form-group
+                                label(for="mce-EMAIL") Email Address  
+                                    span.asterisk *
+                                input.form-control(type="email" name="EMAIL" class="required email" id="mce-EMAIL" value='#{email}')
+
+                            div(class="mc-field-group").form-group
+                                label(for="mce-FNAME") First Name
+                                    span(class="asterisk") *
+                                input.form-control(type="text" value="" name="FNAME" class="required" id="mce-FNAME")
+
+                            div(class="mc-field-group").form-group
+                                label(for="mce-LNAME") Last Name  
+                                    span(class="asterisk") *
+                                input.form-control(type="text" value="" name="LNAME" class="required" id="mce-LNAME")
+
+                                div(id="mce-responses" class="clear")
+                                    div(class="response" id="mce-error-response" style="display:none")
+                                    div(class="response" id="mce-success-response" style="display:none")
+                                    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                                div(style="position: absolute; left: -5000px;")
+                                    input(type="text" name="b_2551012804ea6c46ee20268e9_6bd4028b3a" tabindex="-1" value="")
+                            div
+                                input(type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button")

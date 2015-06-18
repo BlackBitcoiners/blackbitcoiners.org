@@ -15,9 +15,10 @@ router.get('/team', function(req, res) {
 router.get('/mission', function(req, res) {
   res.render('mission', { title: 'Black Bitcoiners — Mission' });
 });
-router.get('/mailinglist', function(req, res) {
-  res.render('mailingList', { title: 'Black Bitcoiners — Mail' });
+router.post('/mailinglist', function(req, res) {
+  res.render('mailingList', { title: 'Black Bitcoiners — Mail', email: req.body.email });
 });
+
 router.get('/conference', function(req, res) {
   res.render('conference', { title: 'Black Bitcoiners — Conference' });
 });

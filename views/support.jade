@@ -1,0 +1,42 @@
+extends layout
+
+block content
+    include ./navbar
+    h1 Support Black Bitcoiners
+    hr
+    h2 Donate
+    p 1BlackBtc318bksuhd9z3nalkl
+    hr
+    .row
+        #socialSupport.col-md-12
+                .col-md-12
+                    .whitebox.col-md-2 Join us on facebook
+                        a(href='https://www.facebook.com/groups/blackbitcoiners').pull-right
+                            i.fa.fa-2x.fa-facebook
+                .col-md-12
+                    .whitebox.col-md-2
+                        | Follow us on twitter
+                        a(href='https://www.twitter.com/blackbitcoiners').pull-right
+                            i.fa.fa-2x.fa-twitter
+                        
+                .col-md-12
+                    .whitebox.col-md-2 Build with us on github
+                        a(href='https://www.github.com/blackbitcoiners').pull-right
+                            i.fa.fa-2x.fa-github
+                .col-md-12
+                    .whitebox.col-md-2 Join us on linkedin
+                        a(href='https://www.linkedin.com/grp/home?gid=6977037').pull-right
+                            i.fa.fa-2x.fa-linkedin
+                    
+    hr
+
+    .col-lg-8.col-md-8.whitebox.col-sm-12.col-xs-12
+        .col-md-12    
+            h1.text-center Want to learn more?
+
+        .col-md-12
+            form(action='./mailingList' method='post')
+                input#learnmoreemail(type='text', placeholder='Your Email Address' name='email') 
+        
+                input#learnmoresubmit(type='submit', value='Submit')
+                input(type='hidden' name='source' value='main')
