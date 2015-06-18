@@ -6,6 +6,9 @@ h1{
     margin-top: 0;
     font-size: 40pt;
 }
+#headline{
+    font-size: 15vw;
+}
 .Twenty{
     font-size: 16pt;
     
@@ -20,9 +23,6 @@ h1{
 }
 #social{
     border-left: 2px solid black;
-}
-#socialSupport{
-    list-style: none;
 }
 #vmiddle{
     margin-top: 20%;
