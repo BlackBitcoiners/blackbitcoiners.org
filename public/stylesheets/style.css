@@ -16,10 +16,21 @@ h1{
     vertical-align: middle;
 }
 
+#address{
+    font-weight: bold;
+    font-size: 1.5vw;
+    margin:1vw;
+}
 
 .navbar-default{
     background-color:#ffffff;
     border: 2px #000000 solid;
+}
+.thumbnail{
+    border: 3px solid black;
+}
+.socialSupport{
+    padding: 2%;
 }
 #social{
     border-left: 2px solid black;
