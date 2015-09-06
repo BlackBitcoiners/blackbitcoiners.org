@@ -8,6 +8,10 @@ router.get('/', function(req, res) {
   res.render('index', { title: 'Black Bitcoiners' });
 });
 
+router.get('/team/apply', function(req, res) {
+  res.redirect('https://docs.google.com/forms/d/1sMKg3niy4Hasm45ilj7AmWf26IC0IzXNBbw0lSZCt14');
+});
+
 router.get('/team', function(req, res) {
   res.render('team', { title: 'Black Bitcoiners — Team' });
 });
